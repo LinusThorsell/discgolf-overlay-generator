@@ -60,6 +60,21 @@ function switchnine() {
     }
 }
 
+// function openImage(base64URL){
+//     var win = window.open();
+//     win.document.write('<iframe src="' + base64URL  + '" frameborder="0" style="border:0; top:0px; left:0px; bottom:0px; right:0px; width:100%; height:100%;" allowfullscreen> </iframe>');
+// }
+
+function downloadURI(uri, name) {
+    var link = document.createElement("a");
+    link.download = name;
+    link.href = uri;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    delete link;
+  }
+
 function updateTotal(player)
 {
     console.log("starting")
@@ -80,6 +95,13 @@ function updateTotal(player)
 
     if (score > 0) {score = "+"+score};
     document.getElementById("total" + player).innerText = score;
+
+    html2canvas(document.querySelector("#screen"), {backgroundColor:null}).then(canvas => {
+        // document.body.appendChild(canvas)
+        downloadURI(canvas.toDataURL("png"), "Overlay");
+        // const win = window.open(canvas.toDataURL("png"), '_blank')
+        // openImage(canvas.toDataURL("png"));
+    });
 }
 
 function triggerShowHoleScore(player, hole)

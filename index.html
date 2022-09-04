@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Discgolf Coverage Overlay Generator</h1>
+    <h2>Created by Linus Thorsell <a href="https://github.com/linusthorsell">github.com/linusthorsell</a></h2>
+
+    <button id="switch" onclick="switchnine()">Switch to back 9</button>
+
+    <br></br>
+
+    <div id="screen"> 
+
+    <div id="c1" class="container">
+        <div class="top-container">
+            <div id="s01" class="score front9" onclick="triggerShowHoleScore(0,1)">1</div>
+            <div id="s02" class="score front9" onclick="triggerShowHoleScore(0,2)">2</div>
+            <div id="s03" class="score front9" onclick="triggerShowHoleScore(0,3)">3</div>
+            <div id="s04" class="score front9" onclick="triggerShowHoleScore(0,4)">4</div>
+            <div id="s05" class="score front9" onclick="triggerShowHoleScore(0,5)">5</div>
+            <div id="s06" class="score front9" onclick="triggerShowHoleScore(0,6)">6</div>
+            <div id="s07" class="score front9" onclick="triggerShowHoleScore(0,7)">7</div>
+            <div id="s08" class="score front9" onclick="triggerShowHoleScore(0,8)">8</div>
+            <div id="s09" class="score front9" onclick="triggerShowHoleScore(0,9)">9</div>
+
+            <div id="s010" class="score back9" onclick="triggerShowHoleScore(0,10)">10</div>
+            <div id="s011" class="score back9" onclick="triggerShowHoleScore(0,11)">11</div>
+            <div id="s012" class="score back9" onclick="triggerShowHoleScore(0,12)">12</div>
+            <div id="s013" class="score back9" onclick="triggerShowHoleScore(0,13)">13</div>
+            <div id="s014" class="score back9" onclick="triggerShowHoleScore(0,14)">14</div>
+            <div id="s015" class="score back9" onclick="triggerShowHoleScore(0,15)">15</div>
+            <div id="s016" class="score back9" onclick="triggerShowHoleScore(0,16)">16</div>
+            <div id="s017" class="score back9" onclick="triggerShowHoleScore(0,17)">17</div>
+            <div id="s018" class="score back9" onclick="triggerShowHoleScore(0,18)">18</div>
+        </div>
+        <div class="name-container">
+            <p class="name">Vincent Muller</p>
+            <div class="total-container">
+                <p id="total0" class="total">0</p>
+            </div>
+        </div>
+    </div>
+    
+    <br></br>
+
+    <div id="c2" class="container">
+        <div class="top-container">
+            <div id="s11" class="score front9" onclick="triggerShowHoleScore(1,1)">1</div>
+            <div id="s12" class="score front9" onclick="triggerShowHoleScore(1,2)">2</div>
+            <div id="s13" class="score front9" onclick="triggerShowHoleScore(1,3)">3</div>
+            <div id="s14" class="score front9" onclick="triggerShowHoleScore(1,4)">4</div>
+            <div id="s15" class="score front9" onclick="triggerShowHoleScore(1,5)">5</div>
+            <div id="s16" class="score front9" onclick="triggerShowHoleScore(1,6)">6</div>
+            <div id="s17" class="score front9" onclick="triggerShowHoleScore(1,7)">7</div>
+            <div id="s18" class="score front9" onclick="triggerShowHoleScore(1,8)">8</div>
+            <div id="s19" class="score front9" onclick="triggerShowHoleScore(1,9)">9</div>
+
+            <div id="s110" class="score back9" onclick="triggerShowHoleScore(1,10)">10</div>
+            <div id="s111" class="score back9" onclick="triggerShowHoleScore(1,11)">11</div>
+            <div id="s112" class="score back9" onclick="triggerShowHoleScore(1,12)">12</div>
+            <div id="s113" class="score back9" onclick="triggerShowHoleScore(1,13)">13</div>
+            <div id="s114" class="score back9" onclick="triggerShowHoleScore(1,14)">14</div>
+            <div id="s115" class="score back9" onclick="triggerShowHoleScore(1,15)">15</div>
+            <div id="s116" class="score back9" onclick="triggerShowHoleScore(1,16)">16</div>
+            <div id="s117" class="score back9" onclick="triggerShowHoleScore(1,17)">17</div>
+            <div id="s118" class="score back9" onclick="triggerShowHoleScore(1,18)">18</div>
+        </div>
+        <div class="name-container">
+            <p class="name">Linus Thorsell</p>
+            <div class="total-container">
+                <p id="total1" class="total">0</p>
+            </div>
+        </div>
+    </div>
+
+    <br></br>
+
+    <div id="c3" class="container">
+        <div class="top-container">
+            <div id="s21" class="score front9" onclick="triggerShowHoleScore(2,1)">1</div>
+            <div id="s22" class="score front9" onclick="triggerShowHoleScore(2,2)">2</div>
+            <div id="s23" class="score front9" onclick="triggerShowHoleScore(2,3)">3</div>
+            <div id="s24" class="score front9" onclick="triggerShowHoleScore(2,4)">4</div>
+            <div id="s25" class="score front9" onclick="triggerShowHoleScore(2,5)">5</div>
+            <div id="s26" class="score front9" onclick="triggerShowHoleScore(2,6)">6</div>
+            <div id="s27" class="score front9" onclick="triggerShowHoleScore(2,7)">7</div>
+            <div id="s28" class="score front9" onclick="triggerShowHoleScore(2,8)">8</div>
+            <div id="s29" class="score front9" onclick="triggerShowHoleScore(2,9)">9</div>
+
+            <div id="s210" class="score back9" onclick="triggerShowHoleScore(2,10)">10</div>
+            <div id="s211" class="score back9" onclick="triggerShowHoleScore(2,11)">11</div>
+            <div id="s212" class="score back9" onclick="triggerShowHoleScore(2,12)">12</div>
+            <div id="s213" class="score back9" onclick="triggerShowHoleScore(2,13)">13</div>
+            <div id="s214" class="score back9" onclick="triggerShowHoleScore(2,14)">14</div>
+            <div id="s215" class="score back9" onclick="triggerShowHoleScore(2,15)">15</div>
+            <div id="s216" class="score back9" onclick="triggerShowHoleScore(2,16)">16</div>
+            <div id="s217" class="score back9" onclick="triggerShowHoleScore(2,17)">17</div>
+            <div id="s218" class="score back9" onclick="triggerShowHoleScore(2,18)">18</div>
+        </div>
+        <div class="name-container">
+            <p class="name">Paul McBeth</p>
+            <div class="total-container">
+                <p id="total2" class="total">0</p>
+            </div>
+        </div>
+    </div>
+
+        <br></br>
+
+        <div id="c4" class="container">
+            <div class="top-container">
+                <div id="s31" class="score front9" onclick="triggerShowHoleScore(3,1)">1</div>
+                <div id="s32" class="score front9" onclick="triggerShowHoleScore(3,2)">2</div>
+                <div id="s33" class="score front9" onclick="triggerShowHoleScore(3,3)">3</div>
+                <div id="s34" class="score front9" onclick="triggerShowHoleScore(3,4)">4</div>
+                <div id="s35" class="score front9" onclick="triggerShowHoleScore(3,5)">5</div>
+                <div id="s36" class="score front9" onclick="triggerShowHoleScore(3,6)">6</div>
+                <div id="s37" class="score front9" onclick="triggerShowHoleScore(3,7)">7</div>
+                <div id="s38" class="score front9" onclick="triggerShowHoleScore(3,8)">8</div>
+                <div id="s39" class="score front9" onclick="triggerShowHoleScore(3,9)">9</div>
+    
+                <div id="s310" class="score back9" onclick="triggerShowHoleScore(3,10)">10</div>
+                <div id="s311" class="score back9" onclick="triggerShowHoleScore(3,11)">11</div>
+                <div id="s312" class="score back9" onclick="triggerShowHoleScore(3,12)">12</div>
+                <div id="s313" class="score back9" onclick="triggerShowHoleScore(3,13)">13</div>
+                <div id="s314" class="score back9" onclick="triggerShowHoleScore(3,14)">14</div>
+                <div id="s315" class="score back9" onclick="triggerShowHoleScore(3,15)">15</div>
+                <div id="s316" class="score back9" onclick="triggerShowHoleScore(3,16)">16</div>
+                <div id="s317" class="score back9" onclick="triggerShowHoleScore(3,17)">17</div>
+                <div id="s318" class="score back9" onclick="triggerShowHoleScore(3,18)">18</div>
+            </div>
+            <div class="name-container">
+                <p class="name">James Conrad</p>
+                <div class="total-container">
+                    <p id="total3" class="total">0</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="c5" class="container">
+            <div class="top-container">
+                <div id="s41" class="score front9" onclick="triggerShowHoleScore(4,1)">1</div>
+                <div id="s42" class="score front9" onclick="triggerShowHoleScore(4,2)">2</div>
+                <div id="s43" class="score front9" onclick="triggerShowHoleScore(4,3)">3</div>
+                <div id="s44" class="score front9" onclick="triggerShowHoleScore(4,4)">4</div>
+                <div id="s45" class="score front9" onclick="triggerShowHoleScore(4,5)">5</div>
+                <div id="s46" class="score front9" onclick="triggerShowHoleScore(4,6)">6</div>
+                <div id="s47" class="score front9" onclick="triggerShowHoleScore(4,7)">7</div>
+                <div id="s48" class="score front9" onclick="triggerShowHoleScore(4,8)">8</div>
+                <div id="s49" class="score front9" onclick="triggerShowHoleScore(4,9)">9</div>
+    
+                <div id="s410" class="score back9" onclick="triggerShowHoleScore(4,10)">10</div>
+                <div id="s411" class="score back9" onclick="triggerShowHoleScore(4,11)">11</div>
+                <div id="s412" class="score back9" onclick="triggerShowHoleScore(4,12)">12</div>
+                <div id="s413" class="score back9" onclick="triggerShowHoleScore(4,13)">13</div>
+                <div id="s414" class="score back9" onclick="triggerShowHoleScore(4,14)">14</div>
+                <div id="s415" class="score back9" onclick="triggerShowHoleScore(4,15)">15</div>
+                <div id="s416" class="score back9" onclick="triggerShowHoleScore(4,16)">16</div>
+                <div id="s417" class="score back9" onclick="triggerShowHoleScore(4,17)">17</div>
+                <div id="s418" class="score back9" onclick="triggerShowHoleScore(4,18)">18</div>
+            </div>
+            <div class="name-container">
+                <p class="name">Mångåsen</p>
+                <div class="total-container">
+                    <p id="total4" class="total">0</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+</body>
+
+<script src="index.js"> </script>
+</html>
